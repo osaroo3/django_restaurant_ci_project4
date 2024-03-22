@@ -2,8 +2,13 @@ from django.contrib import admin
 from .models import Menu, Booking
 
 # Register your models here.
-admin.site.register(Menu)
+@admin.register(Menu)
+class MenuAdmin(admin.ModelAdmin):
+    list_display = ('menu_name', 'price')
 
-admin.site.register(Booking)
 
-    
+@admin.register(Booking)
+class BookingAdmin(admin.ModelAdmin):
+    list_display = ('name', 'menu', 'table_choice', 'created_on', 'phone')
+    search_fields = ('name', 'menu', 'phone')
+    list_filter = ('name', 'menu', 'created_on')
