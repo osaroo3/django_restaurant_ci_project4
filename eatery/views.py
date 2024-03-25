@@ -20,3 +20,19 @@ def menu(request):
 def bookings(request):
     bookings = Booking.objects.all()
     return render(request, 'eatery/my_bookings.html', {'bookings': bookings})
+
+
+def book_now(request):
+    
+    if request.method == 'POST':
+        form = BookingForm(request.POST)
+        if form.is_valid():
+            booking_form = form.save(commit=False)
+            booking_form.user = request.user
+            booking_form.save()
+            return redirect('bookings')
+        else:
+            messages.error(request, "Please input correct data")
+            return render(request, 'book_now.html', {'form': form})
+    form = BookingForm()
+    return render(request, 'book_now.html', {'form': form})

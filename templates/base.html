@@ -2,6 +2,7 @@
 {% url 'index' as index_url %}
 {% url 'menu' as menu_url %}
 {% url 'bookings' as bookings_url %}
+{% url 'book_now' as booknow_url %}
 <!DOCTYPE html>
 <html class="h-100" lang="en">
 
@@ -48,6 +49,10 @@
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == bookings_url %}active" aria-current="page{% endif %}"
                             href="{% url 'bookings' %}">My bookings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == booknow_url %}active" aria-current="page{% endif %}"
+                            href="{% url 'bookings' %}">Book now</a>
                     </li>
 
                 </ul>
