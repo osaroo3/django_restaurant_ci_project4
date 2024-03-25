@@ -7,6 +7,9 @@ class Menu(models.Model):
     menu_name = models.CharField(max_length=200, unique=True)
     price = models.DecimalField(max_digits=5, decimal_places=2)
 
+    class Meta:
+        unique_together = ('menu_name', 'price', )
+
     def __str__(self):
         return f"{self.menu_name} at £{self.price}"
 
@@ -72,6 +75,7 @@ class Booking(models.Model):
 
     class Meta:
         ordering = ["-created_on"]
+        unique_together = ('user', 'date', 'time', 'menu')
 
     def __str__(self):
         return f"{self.name}| {self.menu}|{self.table_choice}|{self.created_on}"

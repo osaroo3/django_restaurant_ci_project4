@@ -79,6 +79,20 @@ body {
     border: 1px solid #000;
 }
 
+/*** My Bookings page ***/
+
+.card {
+    width: 15rem;
+    display: inline-block;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.delete-btn {
+    color: #1b191f ;
+    font-weight: 400;
+
+}
 
 
 

@@ -10,7 +10,13 @@ def index(request):
     """
     return render(request, 'eatery/index.html')
 
+
 def menu(request):
     menu = Menu.objects.all()
 
     return render(request, 'eatery/menu.html', {'menu': menu})
+
+
+def bookings(request):
+    bookings = Booking.objects.all()
+    return render(request, 'eatery/my_bookings.html', {'bookings': bookings})
