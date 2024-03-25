@@ -6,7 +6,7 @@ body {
     font-family: Open Sans, sans-serif;
     font-size: 1.5rem;
     font-weight: 800;
-    color: #27272d;
+    color: #dbbc09;
 }
 
 .light-bg {
@@ -118,12 +118,14 @@ body {
 }
 
 /*** Book_now page ***/
-
+.bookings-title {
+    margin-top: 20px;
+}
 
 .booknow-contain {
     margin: 0 auto;
-    background-color: #312E38;
-    opacity: 0.9;
+    background-color: #bfbdc3;
+    
     border: 1px solid #6c757d;
     border-radius: 5px;
 
@@ -141,7 +143,14 @@ body {
     color: #FF9000;
 }
 
+.p-3{
+    color: #000;
+    margin-top:20px;
+}
 
+.color-type {
+    color:#dbbc09;
+}
 
 
 

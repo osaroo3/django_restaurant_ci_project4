@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
+from django.contrib import messages
+from .forms import BookingForm
 from .models import Menu, Booking
 
 # Create your views here.
@@ -18,21 +20,28 @@ def menu(request):
 
 
 def bookings(request):
-    bookings = Booking.objects.all()
-    return render(request, 'eatery/my_bookings.html', {'bookings': bookings})
 
+    if request.user.is_authenticated:
+        bookings = Booking.objects.filter(user=request.user)
+        return render(request, 'eatery/my_bookings.html', {'bookings': bookings})
+    else:
+        return redirect('../accounts/signup')
+            
 
-def book_now(request):
-    
+def booknow(request):
     if request.method == 'POST':
         form = BookingForm(request.POST)
         if form.is_valid():
             booking_form = form.save(commit=False)
             booking_form.user = request.user
             booking_form.save()
+            messages.add_message(
+                request, messages.SUCCESS,
+                    'Your booking was successfull.')
             return redirect('bookings')
         else:
-            messages.error(request, "Please input correct data")
-            return render(request, 'book_now.html', {'form': form})
+            messages.error(request, "Please enter correct data")
+            return render(request, 'eatery/book_now.html', {'form': form})
+  
     form = BookingForm()
-    return render(request, 'book_now.html', {'form': form})
+    return render(request, 'eatery/book_now.html', {'form':form})
