@@ -59,3 +59,11 @@ def edit_booking(request, booking_id):
             return render(request, 'eatery/edit_booking.html', {'form': form})
     form = BookingForm(instance=booking_record)
     return render(request, 'eatery/edit_booking.html', {'form': form, 'booking_record': booking_record})
+
+
+def booking_delete(request, booking_id):
+    booking_record = get_object_or_404(Booking, id=booking_id)
+    if booking_record.user == request.user:
+        booking_record.delete()
+        messages.success(request, 'Booking deleted succesfully.')
+        return redirect('bookings')
