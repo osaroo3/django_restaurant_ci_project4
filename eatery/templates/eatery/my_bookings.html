@@ -17,7 +17,7 @@
                 <p>{{b.menu.menu_name}}</p>
                 <p><b>Balance to pay: £{{b.menu.price}}</b></p>
                 
-                <a href="#"
+                <a href="{% url 'edit_booking' b.id %}"
                     class="card-link btn btn-warning  mt-3 mb-3">
                     <i class="fa-solid fa-pen-to-square"></i> Modify</a>
                 <a href="#"

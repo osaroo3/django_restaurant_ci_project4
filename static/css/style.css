@@ -152,5 +152,13 @@ body {
     color:#dbbc09;
 }
 
+/*** Edit booking page  */
+
+.cancel, .btn-success {
+    color:#000;
+    text-decoration:none;
+}
+
+
 
 

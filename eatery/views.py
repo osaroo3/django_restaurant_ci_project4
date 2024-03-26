@@ -45,3 +45,17 @@ def booknow(request):
   
     form = BookingForm()
     return render(request, 'eatery/book_now.html', {'form':form})
+
+
+def edit_booking(request, booking_id):
+    booking_record = get_object_or_404(Booking, id=booking_id)
+    if request.method == 'POST':
+        form = BookingForm(request.POST, instance=booking_record)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'You succesfully modified your booking.')
+            return redirect('bookings')
+        else:
+            return render(request, 'eatery/edit_booking.html', {'form': form})
+    form = BookingForm(instance=booking_record)
+    return render(request, 'eatery/edit_booking.html', {'form': form, 'booking_record': booking_record})
