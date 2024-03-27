@@ -123,6 +123,10 @@ body {
     align-items: center;
     margin-bottom: 5px;
 }
+.card-size {
+    width: 240px !important;
+    height: 355px !important;
+}
 
 .delete-btn {
     color: #1b191f ;
