@@ -15,7 +15,7 @@
                 <p class="text-white"><b>On {{b.date}} at {{b.time}}</b></p>
                 <p>You booked:</p>
                 <p>{{b.menu.menu_name}}</p>
-                <p><b>Balance to pay: £{{b.menu.price}}</b></p>
+                <p><b>Balance owed: £{{b.menu.price}} per plate</b></p>
                 
                   <a href="{% url 'edit_booking' b.id %}"
                      class="card-link btn btn-warning  mt-3 mb-3">

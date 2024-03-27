@@ -44,6 +44,19 @@ body {
     text-decoration: underline;
 }
 
+/*** index page ***/
+
+.card-index {
+    width: 90% !important;
+    margin-top: 10px !important;
+    margin-bottom:10px !important;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 200px;
+}
+
 /*** Menu page ***/
 .menu-contain {
     width: 50%;
@@ -120,6 +133,9 @@ body {
 /*** Book_now page ***/
 .bookings-title {
     margin-top: 20px;
+}
+.make-bold{
+    font-weight:bold;
 }
 
 .booknow-contain {
