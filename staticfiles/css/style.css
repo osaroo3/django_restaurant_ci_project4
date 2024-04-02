@@ -33,8 +33,12 @@ body {
     color: #23BBBB;
 }
 
+.link-color{
+    color:#dbbc09;
+}
+
 .link {
-    color: #23BBBB;
+    color: #dbe2e2;
     text-decoration: none;
 }
 
@@ -123,6 +127,10 @@ body {
     align-items: center;
     margin-bottom: 5px;
 }
+.card-size {
+    width: 240px !important;
+    height: 355px !important;
+}
 
 .delete-btn {
     color: #1b191f ;
@@ -162,6 +170,9 @@ body {
 .p-3{
     color: #000;
     margin-top:20px;
+}
+.text-color {
+    color:#dbe2e2;
 }
 
 .color-type {

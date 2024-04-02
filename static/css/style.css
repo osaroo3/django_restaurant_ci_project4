@@ -33,6 +33,10 @@ body {
     color: #23BBBB;
 }
 
+.link-color{
+    color:#dbbc09;
+}
+
 .link {
     color: #dbe2e2;
     text-decoration: none;
@@ -166,6 +170,9 @@ body {
 .p-3{
     color: #000;
     margin-top:20px;
+}
+.text-color {
+    color:#dbe2e2;
 }
 
 .color-type {

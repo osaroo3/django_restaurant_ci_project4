@@ -9,6 +9,6 @@ class MenuAdmin(admin.ModelAdmin):
 
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
-    list_display = ('name', 'menu', 'table_choice', 'created_on', 'phone')
+    list_display = ('name', 'menu', 'table_choice', 'date', 'time')
     search_fields = ('name', 'menu', 'phone')
     list_filter = ('name', 'menu', 'created_on')

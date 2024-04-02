@@ -7,7 +7,9 @@
 <div class="booknow-page d-flex justify-content-center">
     <div class="text-center p-5">
         <h2 class="bookings-title  mb-1">Book now</h2>
+        {% if user.is_authenticated %}
         <p class="make-bold">Please order your drinks when you arrive</p>
+        {% endif %}
         {% if user.is_authenticated %}
         <div class="booknow-contain  p-3">
             <div class="mt-3">
@@ -24,9 +26,9 @@
             <div class="booknow-block d-flex">
 
                 <div class="p-3  text-left">
-                    <p >To make a reservation, please <a href="/accounts/login/">
+                    <p class="text-color">To make a reservation, please <a href="/accounts/login/">
                         <span class="color-type">login</span></a></p>
-                    <p>Don't have an account yet?...please <a href="/accounts/signup/">
+                    <p class="text-color">Don't have an account yet?...please <a href="/accounts/signup/">
                         <span class="color-type">sign up</span></a></p>
                 </div>
             </div>

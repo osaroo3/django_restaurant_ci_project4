@@ -78,4 +78,4 @@ class Booking(models.Model):
         unique_together = ('user', 'date', 'time', 'menu','table_choice')
 
     def __str__(self):
-        return f"{self.name}| {self.menu}|{self.table_choice}|{self.created_on}"
+        return f"{self.name}|{self.menu}|{self.table_choice}|{self.date}|{self.time}"
