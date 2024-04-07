@@ -172,105 +172,104 @@ The wireframes can be seen below:
 
 [Back to the top](#table-of-contents)
 
+-->
 
 
 ## Features
 
 ### Navbar
 
-The navigation bar is present on all pages of the site. The navigation bar changes depending on whether the user is a guest or an authorized visitor.
-Also, the navigation bar is an adaptive element, and on mobile screens it collapses into a hamburger icon.
+Due to the base extension, the navigation bar is present on all pages of the site. If the user is logged in, the right end of the nav bar changes from "Welcome, AnonymousUser to welcome, John(depending on the name of the user)". The nav bar also collapses into a hamburger icon for smaller screen sizes.
 
-Navigation bar for an unauthorized user.
+Navigation bar for user's without an account.
 
-![Main navigation](static/assets/features/navbar.png)
+![Navigation bar for unauthorised user's]()
 
-Navigation bar for an authorized user, menu items My Bookings and Logout are available.
-![Authenticated user's Navigation](static/assets/features/logged-navbar.png)
+Navigation bar for logged in users.
+![Authenticated user's Navigation]()
 
 ### Home page
 
-On the Home page a user can create an account or Login from the menu or using links provided under the logo. 
-![Home page](static/assets/features/home.png)
+On the Home page, both authorised and unauthorised users can see the nav bar items, and also views the eatery/restaurant menu. 
+![Home page]()
 
 ### Sign up page
 
-To create an account user should fill in form provided on Sign up page.
-![Sign up page](static/assets/features/signup.png)
+This page allows unauthorised users to create an account by following the instructions.
+![Sign up page]()
 
 
 ### Login page
 
-To login the user should enter credential data that was used during sign up process.
+This page allows user's with account to login by providing their credentials.
 
-![Sign in page](static/assets/features/login.png)
-
-
-## Services page
-
-The Services page provides information about all available barbershop services. User also can book necessary service straight from the Services page by clicking on the services price.
-![Sign up page](static/assets/features/services.png)
+![Sign in page]()
 
 
-## Book Now page
+## Menu page
 
-The Book Now button has a hover effect to provide user feedback:
-![Book Now button](static/assets/features/booknow-btn.png)
-
-Users must be logged in to make a booking. To book a service, the user must fill in the required fields in the form: name, phone, services, date, time and an optional email field.
-
-#### Book Now page for the logged user
-
-<img src="static/assets/features/booknow-logged.png" width="670" />
-
-If the user is not authenticated then the user will be shown a message that the user has to sign up or login.
-![Book Now page message](static/assets/features/booknow-msg.png)
+The menu button on the bav bar when clicked, takes the user to the menu page which provides users with available menu and the corresponding price to choose from.
+![Sign up page]()
 
 
-## Booking page
+## Book now page
 
-The Booking page is available only to authorized users. The booking page displays the following data: order ID, date, time, service name and cost of the booked service.
+The Book now button when clicked, takes the user to the book now page. For logged in user's, a table to fill to make bookings shows up. However, for user's without an account, there is a link provided to redirect them to sign up.
 
-![Booking page](static/assets/features/bookings.png)
+#### Book Now page for a logged in user
 
-If the user has not yet booked any services, then the user will be shown a message that the user has no bookings at the moment and there is an opportunity  to make a booking.
+![Book Now page]()
 
-![Booking page message](static/assets/features/bookings-msg.png)
+#### Book Now page for an unauthorised user
 
-
-## Change booking page
-
-Each booking can be changed or deleted. The user must be authenticated in order to access the change his bookings.
-The change booking page can be accessed for a specific booking. The page Change booking contains an auto-filled booking form. The user can change the fields at his discretion.
+![Book now page]()
 
 
-<img src="static/assets/features/change-booking.png" height="500" />
+## My Bookings page
 
-## Delete page
+The booking page displays bookings made by the logged in user, with details about the bookings.
 
-The User must be authenticated to delete the booking. The Delete booking page provides two buttons: 'Yes, delete booking' and 'Back to my bookings' if the user changes his mind. 
-Deletion will delete the only specific booking for the user.
+![Booking page]()
 
-![Delete booking page](static/assets/features/delete.png)
+If there is no booking yet, the logged in user is told with a further suggestion to make bookings with a provided a link to the page to make bookings.
+
+![Booking page]()
+
+
+## Edit booking page
+
+Every bookings made by a logged in user can be modified by either editing the bookings or deleting them. The modify and delete button exist on my bookings page.
+
+![Book now page]()
+
+## Delete button
+
+Only a logged in user has access to this feature. Once this button is clicked the JavaScript code renders a modal to further get assurance that the user wants to delete that booking before deletion is done.
+
+![Delete booking page]()
 
 
 ## Logout page
 
-An authenticated user can logout from account by clicking the Logout button, after which the user will be redirected to the Logout page where the user needs to confirm to logout from account to prevent occasionally log out of user account.
+A logged in user can log out by clicking the log out button on the nav bar. This action takes the user to the sign out page to get confirmation before the user is logged out.
 
-![Logout page](static/assets/features/logout.png)
+![Logout page]()
 
 
 ### Responsive design
-The site has been designed to be responsive and adapted for desktop and mobile use.
-The project has been tested using a multi-device emulator with different screen sizes in the Google Chrome Developer Dashboard.
+
+The site was designed to be responsive for both desktop and mobile use.
+This project has been tested using the Google Chrome Developer multi-device emulator with different screen sizes.
 
 
 ## Future features
 
-- page with information about working hours and contacts
-- blog page about news and trends
-- booking confirmation by email
+- Email confirmation after booking is made.
+- Blog page about african foods and their receipes.
+- Contact page
+- Comment page for customers comment about the services provided by africana.
+- After been served by africana, the modify and delete buttons on the users bookings should not be visible any longer.
+
 
 [Back to the top](#table-of-contents)
 
@@ -278,45 +277,44 @@ The project has been tested using a multi-device emulator with different screen 
 ## Technologies Used
 
 ### Languages
-  - Python
-  - JavaScript
+
   - HTML5
   - CSS3
+  - JavaScript
+  - Python
+ 
 
 ### Frameworks, Libraries, Programs
 
-  - [Django](https://www.djangoproject.com/): python framework used to create all the backend 
+  - [Django](https://www.djangoproject.com/): python framework was used to create the backend 
 
 
 ### Database:
-  - [PostgreSQL](https://www.postgresql.org/): the database used to store all the data.
+  - [PostgreSQL](https://www.postgresql.org/): the database was used to store all the data.
 
 
 ### Programs & Tools
 
-- [Google Fonts:](https://fonts.google.com/) Was used to to incorporate font styles.  
-- [Font Awesome](https://fontawesome.com/): was used to create the icons used on the website.
-- [Bootstrap](https://getbootstrap.com/) Was used to create the front-end design.
-- [Gitpod:](https://Gitpod.io/) Gitpod was used as IDE to commit and push the project to GitHub.
-- [GitHub:](https://github.com/) Was used as a version control system to manage the code
-- [Figma:](https://www.figma.com/) Was used to create wireframes
-- [TinyPNG:](https://www.figma.com/) Was used to reduce the size and weight of images and optimizing interaction with the site 
-- [Am I Responsive](http://ami.responsivedesign.is/) to generate an image showcasing the website's responsiveness to different screen sizes 
+- [Google Fonts](https://fonts.google.com/): Was used for the font styling.  
+- [Font Awesome](https://fontawesome.com/): was used to generate the icons on the website.
+- [Bootstrap](https://getbootstrap.com/): Was used to create the front-end design.
+- [Gitpod](https://Gitpod.io/): was used as IDE to commit and push the project to GitHub.
+- [GitHub](https://github.com/): Was used as the version control system to manage the code
+<!-- - [Figma:](https://www.figma.com/) Was used to create wireframes -->
+<!-- - [TinyPNG:](https://www.figma.com/) Was used to reduce the size and weight of images and optimizing interaction with the site  -->
+- [Am I Responsive](http://ami.responsivedesign.is/): was used to generate an image showing the website's responsiveness on different screen sizes 
 - [Pip3](https://pypi.org/project/pip/): is the package manager to install Python modules and libraries.
 - [Gunicorn](https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/gunicorn/): "Green Unicorn" is a Python Web Server Gateway to translate HTTP Requests for Python to understand.
-- [Spycopg2](https://pypi.org/project/psycopg2/): PostgreSQL database adapter so I can manage the Database in Python. 
-- [Cloudinary](https://cloudinary.com/): the image hosting service used to upload images and other media.
-- [Heroku](https://dashboard.heroku.com/): the hosting service used to host the website.
-- [VSCode](https://code.visualstudio.com/): the IDE used to develop the website.
+- [Spycopg2](https://pypi.org/project/psycopg2/): PostgreSQL database adapter to manage the Database in Python. 
+- [Heroku](https://dashboard.heroku.com/): the hosting service used to host my website.
 - [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/open/): was used to debug the website.
-- [W3C Validator](https://validator.w3.org/): was used to validate HTML5 code for the website.
-- [W3C CSS validator](https://jigsaw.w3.org/css-validator/): was used to validate CSS code for the website.
-- [Github Projects and Kanban board](https://github.com/users/LarisaLG/projects/17/views/1) was used to track the progress of the project in general and of every application in the project.
-- [Free grammar checker](https://www.zoho.com/writer/free-grammar-checker.html)
+- [W3C Validator](https://validator.w3.org/): was used to validate HTML5 codes for this website.
+- [W3C CSS validator](https://jigsaw.w3.org/css-validator/): was used to validate CSS codes for this website.
+- [Github Projects and Kanban board](https://github.com/users/LarisaLG/projects/17/views/1): was used to track the progress of the project.
 
 
 ## Testing
-
+<!--
 ### Bugs
 
 #### Fixed Bugs
