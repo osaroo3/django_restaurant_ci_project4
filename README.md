@@ -23,7 +23,7 @@
 # Portfolio Project 4 -  
 ![]()
 
-<!-- The deployed [GOBARBER](https://gobarbershop.herokuapp.com/) app.-->
+The deployed [Africana](https://django-africana-eatery-ed503b69cf5f.herokuapp.com/) app.
 
 The [GitHub repository](https://github.com/osaroo3/django_restaurant_ci_project4) 
 
@@ -78,7 +78,7 @@ The main page is as viewed below.
 <details>
 <summary>Africana website look at first glance</summary>
 
-![Home page]()
+![Home page](staticfiles/images/readme-images/home-page.PNG)
 
 </details>
 <br />
@@ -183,33 +183,33 @@ Due to the base extension, the navigation bar is present on all pages of the sit
 
 Navigation bar for user's without an account.
 
-![Navigation bar for unauthorised user's]()
+![Navigation bar for unauthorised user's](staticfiles/images/readme-images/nav-bar2.PNG)
 
 Navigation bar for logged in users.
-![Authenticated user's Navigation]()
+![Authenticated user's Navigation](staticfiles/images/readme-images/nav-bar1.PNG)
 
 ### Home page
 
 On the Home page, both authorised and unauthorised users can see the nav bar items, and also views the eatery/restaurant menu. 
-![Home page]()
+![Home page](staticfiles/images/readme-images/home-page.PNG)
 
 ### Sign up page
 
 This page allows unauthorised users to create an account by following the instructions.
-![Sign up page]()
+![Sign up page](staticfiles/images/readme-images/sign-up.PNG)
 
 
 ### Login page
 
 This page allows user's with account to login by providing their credentials.
 
-![Sign in page]()
+![Sign in page](staticfiles/images/readme-images/sign-in.PNG)
 
 
 ## Menu page
 
 The menu button on the bav bar when clicked, takes the user to the menu page which provides users with available menu and the corresponding price to choose from.
-![Sign up page]()
+![Menu page](staticfiles/images/readme-images/menu-page.PNG)
 
 
 ## Book now page
@@ -218,42 +218,39 @@ The Book now button when clicked, takes the user to the book now page. For logge
 
 #### Book Now page for a logged in user
 
-![Book Now page]()
+![Book Now page](staticfiles/images/readme-images/book-now-page.PNG)
 
 #### Book Now page for an unauthorised user
 
-![Book now page]()
+![Book now page](staticfiles/images/readme-images/book-now-page2.PNG)
 
 
 ## My Bookings page
 
 The booking page displays bookings made by the logged in user, with details about the bookings.
 
-![Booking page]()
+![Booking page](staticfiles/images/readme-images/my-bookings-page.PNG)
 
-If there is no booking yet, the logged in user is told with a further suggestion to make bookings with a provided a link to the page to make bookings.
-
-![Booking page]()
-
+If there is no booking yet, the logged in user is told with a further suggestion to make bookings with a provided a link to the page to make bookings. If the user is not logged in, they are redirected to sign up page.
 
 ## Edit booking page
 
 Every bookings made by a logged in user can be modified by either editing the bookings or deleting them. The modify and delete button exist on my bookings page.
 
-![Book now page]()
+![Edit booking page](staticfiles/images/readme-images/edit-booking.PNG)
 
 ## Delete button
 
 Only a logged in user has access to this feature. Once this button is clicked the JavaScript code renders a modal to further get assurance that the user wants to delete that booking before deletion is done.
 
-![Delete booking page]()
+![Delete booking page](staticfiles/images/readme-images/delete-booking.PNG)
 
 
 ## Logout page
 
 A logged in user can log out by clicking the log out button on the nav bar. This action takes the user to the sign out page to get confirmation before the user is logged out.
 
-![Logout page]()
+![Logout page](staticfiles/images/readme-images/log-out.PNG)
 
 
 ### Responsive design
