@@ -194,7 +194,13 @@ body {
 .btn-delete {
     color: #fff;
     background: #E84610;
-}   
-
-
-
+}
+/*** 500.html  */ 
+#footer-down{
+    position: absolute;
+    bottom: 0 !important;
+    width: 100%; 
+}
+.back-bg {
+    color: rgb(53, 194, 53) !important;
+}
