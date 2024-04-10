@@ -78,7 +78,7 @@ The main page is as viewed below.
 <details>
 <summary>Africana website look at first glance</summary>
 
-![Home page](staticfiles/images/readme-images/home-page.PNG)
+![Home page](staticfiles/images/readme-images/home-page2.PNG)
 
 </details>
 <br />
@@ -190,7 +190,7 @@ Navigation bar for logged in users.
 
 ### Home page
 
-On the Home page, both authorised and unauthorised users can see the nav bar items, and also views the eatery/restaurant menu. 
+On the Home page, unauthorised users cannot see my bookings and book now links on the nav bar . 
 ![Home page](staticfiles/images/readme-images/home-page.PNG)
 
 ### Sign up page
