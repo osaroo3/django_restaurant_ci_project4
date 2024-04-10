@@ -3,6 +3,8 @@ from django.contrib.auth.models import User
 from django.core.validators import RegexValidator
 
 # Create your models here.
+
+
 class Menu(models.Model):
     menu_name = models.CharField(max_length=200, unique=True)
     price = models.DecimalField(max_digits=5, decimal_places=2)
@@ -54,6 +56,7 @@ TABLE = (
     ('Table for 8', 'Table for 8'),
 )
 
+
 class Booking(models.Model):
 
     """
@@ -68,14 +71,16 @@ class Booking(models.Model):
                                 code="invalid")
     phone = models.CharField(validators=[phoneRegex], max_length=16,
                              null=True, blank=True)
-    table_choice = models.CharField(max_length=50, choices=TABLE, default='Table for 1')
+    table_choice = models.CharField(
+        max_length=50, choices=TABLE, default='Table for 1')
     date = models.DateField()
     time = models.CharField(max_length=50, choices=HOURS, default='08:00')
     created_on = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         ordering = ["-created_on"]
-        unique_together = ('user', 'date', 'time', 'menu','table_choice')
+        unique_together = ('user', 'date', 'time', 'menu', 'table_choice')
 
     def __str__(self):
-        return f"{self.name}|{self.menu}|{self.table_choice}|{self.date}|{self.time}"
+        return
+        f"{self.name}|{self.menu}|{self.table_choice}|{self.date}|{self.time}"
