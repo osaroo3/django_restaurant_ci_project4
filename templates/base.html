@@ -49,6 +49,7 @@
                         <a class="nav-link {% if request.path == menu_url %}active" aria-current="page{% endif %}"
                             href="{% url 'menu' %}">Menu</a>
                     </li>
+                    {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == bookings_url %}active" aria-current="page{% endif %}"
                             href="{% url 'bookings' %}">My bookings</a>
@@ -57,6 +58,7 @@
                         <a class="nav-link {% if request.path == booknow_url %}active" aria-current="page{% endif %}"
                             href="{% url 'booknow' %}">Book now</a>
                     </li>
+                    {% endif %}
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}" 

@@ -11,6 +11,7 @@
        <div class="card-body">
           
           <div class="booking-text text-left">
+                {% if user.is_authenticated %}
                 <p>Your booking ID is: {{b.id}} </p>
                 <p class="text-white"><b>On {{b.date}} at {{b.time}}</b></p>
                 <p>You booked:</p>
@@ -22,7 +23,7 @@
                      <i class="fa-solid fa-pen-to-square"></i> Modify</a>
                   <button class="btn btn-delete" data-booking_id="{{ b.id }}">
                      <i class="fa fa-trash" aria-hidden="true"></i>Delete</button>   
-                   
+                {% endif %}   
           </div>
        </div>
     </div>
