@@ -28,7 +28,7 @@ def menu(request):
 
 def bookings(request):
     """
-    This view renders all the bookings made 
+    This view renders all the bookings made
     to a logged in user
     """
     if request.user.is_authenticated:

@@ -380,79 +380,81 @@ The available functionality and user experience is reflected in the table below.
 | |
 
 <br/>
-
+-->
 
 ## Validation
 
 ### HTML Validation:
 
 The [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML of the website. 
-There were errors and warnings in the reports about unclosed elements and tags, incorrect values ​​and types of elements, unnecessary trailing slashes. All errors and warnings have been fixed, the project's HTML code has been re-checked without errors.
+Errors was noticed when carrying out HTML validation for the sign up page. Since it's a generated form from CI codestar blog project, there is no access to the form to do the neccessary modification of the code.
 
 
 <details><summary>Home page</summary>
 
-![](static/assets/validation/html/home.png)
+![](staticfiles/images/readme-images/checker-home-page.PNG)
 </details>
-<details><summary>Services page</summary>
+<details><summary>Menu page</summary>
 
-![](static/assets/validation/html/services.png)
+![](staticfiles/images/readme-images/checker-menu-page.PNG)
 </details>
 <details><summary>Sign up page</summary>
 
-![](static/assets/validation/html/signup.png)
+![](staticfiles/images/readme-images/checker-signup-page.PNG)
 </details>
 <details><summary>Login page</summary>
 
-![](static/assets/validation/html/login-error.jpg)
+![](staticfiles/images/readme-images/checker-login-page.PNG)
 </details>
 
-<details><summary>Book Now page for guests</summary>
+<details><summary>My bookings page</summary>
 
-![](static/assets/validation/html/booknow-msg.png)
+![](staticfiles/images/readme-images/checker-mybookings-page.PNG)
 </details>
-<details><summary>Book Now page for authorized users</summary>
 
-![](static/assets/validation/html/booknow-form-error.png)
+<details><summary>Book Now page</summary>
+
+![](staticfiles/images/readme-images/checker-booknow-page.PNG)
 </details>
-<details><summary>Change booking page</summary>
 
-![](static/assets/validation/html/changebooking.png)
+</details>
+<details><summary>Modify booking page</summary>
+
+![](staticfiles/images/readme-images/checker-editbooking-page.PNG)
 </details>
 <details><summary>Delete booking page</summary>
 
-![](static/assets/validation/html/delete-booking-error.png)
+![](staticfiles/images/readme-images/checker-deletebooking-page.PNG)
 </details>
 <details><summary>Logout page</summary>
 
-![](static/assets/validation/html/logout.png)
+![](staticfiles/images/readme-images/checker-logout-page.PNG)
 </details>
 
 ---
 ### CSS Validation:
 
-The website CSS style has successfully passed the [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/). 
-![](static/assets/validation/css-validation.png)
+The website CSS styling was validated using [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/). 
+![](staticfiles/images/readme-images/checker-styling.PNG)
 
 ---
 <br/>
 ### Python Validation (PEP8)
 
-All Python code was manually checked using [CI Python Linter](https://pep8ci.herokuapp.com/). 
-The Linter reports had messages about exceeding the string length of 79 characters, which have been fixed. Re-testing did not reveal any errors.
+All Python code was checked manually with the aid of  [CI Python Linter](https://pep8ci.herokuapp.com/). Errors observed have all been fixed. 
 
 urls.py
-![urls.py](static/assets/validation/pylint/urls.png)
+![urls.py](staticfiles/images/readme-images/checker-urls.PNG)
 models.py
-![models.py](static/assets/validation/pylint/models.png)
+![models.py](staticfiles/images/readme-images/checker-models.PNG)
 forms.py
-![forms.py](static/assets/validation/pylint/forms.png)
+![forms.py](staticfiles/images/readme-images/checker-forms.PNG)
 views.py
-![views.py](static/assets/validation/pylint/views.png)
+![views.py](staticfiles/images/readme-images/checker-views.PNG)
 
 ---
 
-
+<!--
 ##  Deployment
 
 The project was developed using Gitpod, the project code is stored on GitHub, and then deployed to Heroku.
