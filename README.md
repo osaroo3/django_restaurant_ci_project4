@@ -1,3 +1,16 @@
+# Portfolio Project 4 -  Africana Eatery booking system
+![](staticfiles/images/readme-images/am-i-responsive.PNG)
+
+The deployed [Africana](https://django-africana-eatery-ed503b69cf5f.herokuapp.com/) app.
+
+The [GitHub repository](https://github.com/osaroo3/django_restaurant_ci_project4) 
+
+## Project goals
+The goals of this project is to develop an eatery/resturant web application with features, such as date/time-based bookings,
+multiple table occupancies, cancellations, menu and double bookings prevention. This portfolio project 4 is a requirement in order to obtain a Diploma from Code Institute in Fullstack Software Development (E-Commerce Applications).
+
+# Table of content
+
 - [**UX (User Experience)**](#ux-user-experience)
   - [**User Stories**](#user-stories)
 - [**Design and Site Structure**](#design-structure)
@@ -13,25 +26,9 @@
 - [**Deployment**](#deployment)
 - [**Credits**](#credits)
   - [**Code**](#code)
-  - [**Content**](#content)
-  - [**Media**](#media)
-  - [**Inspiration**](#inspiration)
+  - [**Content and media**](#content)
   - [**Acknowledgments**](#acknowledgments)
 
-
-  
-# Portfolio Project 4 -  
-![]()
-
-The deployed [Africana](https://django-africana-eatery-ed503b69cf5f.herokuapp.com/) app.
-
-The [GitHub repository](https://github.com/osaroo3/django_restaurant_ci_project4) 
-
-
-
-## Project goals
-The goals of this project is to develop an eatery/resturant web application with features, such as date/time-based bookings,
-multiple table occupancies, cancellations, menu and double bookings prevention. This portfolio project 4 is a requirement in order to obtain a Diploma from Code Institute in Fullstack Software Development (E-Commerce Applications).
 
 
 ## UX (User Experience)
@@ -60,8 +57,6 @@ As a returning user, I want:
 
 #### Site Administrator goals
 As a site administrator, I want to create, read, update and delete bookings/reservations.    
-
-[Back to the top](#table-of-contents)
 
 
 ### Agile tools
@@ -98,8 +93,6 @@ The main page is as viewed below.
 **Login page:** The login page offers a user with a user account access to all the features of the site when they log in with their login details.
 
 **Edit booking page:** The feature is only available to registered users who wish to modify their bookings.
-
-[Back to the top](#table-of-contents)
 
 
 ### Wireframes
@@ -266,9 +259,6 @@ This project has been tested using the Google Chrome Developer multi-device emul
 - Contact page
 - Comment page for customers comment about the services provided by africana.
 - After been served by africana, the modify and delete buttons on the users bookings should not be visible any longer.
-
-
-[Back to the top](#table-of-contents)
 
 
 ## Technologies Used
@@ -438,6 +428,12 @@ The website CSS styling was validated using [W3C Jigsaw CSS Validation Service](
 ![](staticfiles/images/readme-images/checker-styling.PNG)
 
 ---
+### JavaScript Validation:
+
+The website JavaScript code was validated using [JSHint Validation](https://jshint.com/). 
+![](staticfiles/images/readme-images/check-js.PNG)
+
+---
 <br/>
 ### Python Validation (PEP8)
 
@@ -454,32 +450,19 @@ views.py
 
 ---
 
-<!--
+
 ##  Deployment
 
-The project was developed using Gitpod, the project code is stored on GitHub, and then deployed to Heroku.
-To deploy, follow these steps:
-
-1. Log in to Heroku or create an account if required.
-On the Welcome page in the top right corner click the button labeled 'New'.
-
-2. From the drop-down menu select 'Create new app'.
-Enter a preferred app name.
-Select the relevant geographical region.
-Click to 'Create App'.
-
-3. Navigate to 'Settings' and scroll down to the 'Config Vars' section.
-Click 'Reveal Config Vars' and enter 'PORT' for the key and '8000' for the value. Then click 'Add'.
-Add CLOUDINARY_URL, DATABASE_URL and SECRET_KEY. URL variable values ​​must be copied from your [CLOUDINARY](https://cloudinary.com/) account  and [ElephantSQL](https://www.elephantsql.com/) account.
-To create a SECRET KEY, use the online service or come up with your own.
-
-4. Click on the 'Deploy' tab.
-Next to 'Deployment method' select 'GitHub'.
-Connect the relevant GitHub repository.
-Under 'Manual deploy' choose the correct branch and click 'Deploy Branch'.
-Also you can select 'Automatic Deploys' so that the site updates when updates are pushed to GitHub.
-
-5. After successful deployment message in the page top right corner click the button labeled 'Open app' and you can access live app.
+The development of this project was done with Gitpod, stored on GitHub and deployed using Heroku.
+1. Visit [Heroku](https://heroku.com/)
+2. Log in or create an account if applicable.
+3. On the Heroku dashboard click on the 'new' button.
+4. From the drop-down menu select 'Create new app'.
+5. Choose your preferred app name.
+6. Select the applicable region and click 'Create App'.
+7. Navigate to 'Settings' and scroll down to the 'Config Vars' section. Click on 'Reveal Config Vars' and enter 'PORT' for the key and '8000' for the value and then click 'Add'. Repeat the key and value entry for your DATABASE_URL(the database you are using) and SECRET_KEY(you generated during production).
+8. Click on the 'Deploy' tab. Select GitHub and the connect to the relevant repository. Click 'Deply branch'. You can also select 'Automatic Deploys' so that the site updates when updates are pushed to GitHub, however, you must set 'DEBUG = False' in your settings.py to avoid security concerns for your site.
+9. After your deployment is successful click 'Open app' to view thelive app.
 
 
 ### Forking the GitHub Repository
@@ -487,7 +470,7 @@ Also you can select 'Automatic Deploys' so that the site updates when updates ar
 To use this code and make changes without affecting the original code, it is possible to 'fork' the code on the GitHub repository through the following steps:
 
 1. Create  or log into your GitHub account.
-2. Go to the GitHub [repository](https://github.com/LarisaLG/barbershop).
+2. Go to the GitHub [repository](https://github.com/osaroo3/django_restaurant_ci_project4).
 3. Click the 'Fork' button in the upper right-hand corner of the page.
 A copy of the repository will be available in your own repository.
 
@@ -515,40 +498,32 @@ For more information follow this [link](https://docs.github.com/en/repositories/
 
 ### Code
 
-The structure and the code of the project was based on two walkthroughs by the Code Institute:
-  * Hello Django - I created CRUD functionalities based on the examples of this walkthrough.
-  * From I think  therefore I blog -  I borrowed confirmation messages code and also followed the site deployment steps outlined here. 
-
-Date picker field and minimum date validator taken from [here](https://gist.github.com/stasyao/99376eb0cf0ad3599f9737c421b5210e#part_4).
-
-[Official Django Documentation](https://docs.djangoproject.com/en/4.1/ref/) was researched for code expressions  and code functionalities.
-Django [choices fields](https://docs.djangoproject.com/en/4.1/ref/models/fields/).
-
-Stack Overflow was used intensively for research into code functionalities and problem solving. 
+The idea for structure and the code of this project was from Code Institute's Codestar blog walkthrough project and LarisLG [Barbershop](https://github.com/LarisaLG/barbershop) project:
+  * The base.html code and styling is a modification of that of the codestar blog project.
+  * Credit to LarisaLG for the idea of the menu, my bookings and book now html page with styling.
+  * Credit to LarisaLG for Date picker field and minimum date validator.
+  * The javaScript code for deleting a booking was from codestar blog project.
+  * The idea for my models.py was from Codestar blog and barbarshop by LarisaLG.
+  * Credit to [W3schools](https://www.w3schools.com/django/django_404.php) for the idea to handle double booking server error.
+  * Credit to [Django documentation](https://docs.djangoproject.com/en/5.0/) for "Everything you need to know about Django".
 
 
-### Content
+### Content and Media
 
-The site home page is taken from the Figma community template. I slightly changed the look of the home page and tried to keep the rest of the pages in the same style.
+Credit to the following for the images of my homepage:
+1. [Abacha](https://apocomkitchen.co.uk/assets/front/img/product/sliders/615b138763c10.jpg)
+2. [Nkwobi](https://worldlytreat.com/wp-content/uploads/2023/03/Nkwobi-spicy-cow-leg-7.jpg)
+3. [Jollof](https://www.tastingtable.com/1000081/jollof-wars-the-dispute-surrounding-this-west-african-rice-dish/)
+4. [Fried rice](https://www.sweetnspicee.com/wp-content/uploads/2020/11/LEY_1301-scaled.jpg)
+5. [Yam porridge](https://guardian.ng/wp-content/uploads/2020/05/Vegetable-Yam-Porridge.-Photo-My-diaspora-kitchen.jpeg)
+6. [Egusi soup](https://www.forksandfingers.co.uk/wp-content/uploads/2019/06/Pounded-Yam.jpg.pagespeed.ce.GB0JCqfsKY.jpg)
+7. [Afang Soup](https://guardian.ng/wp-content/uploads/2018/09/Afang-soup-recipe-579x598.png)
+8. [Oha soup](https://www.vemscrunch.co.uk/wp-content/uploads/2022/08/Oha-Soup.jpg)
+9. [Banga soup](https://i.pinimg.com/736x/f3/d8/03/f3d803ce13eec61ea8a1a6bbd7d1fff3.jpg)
 
+Note: The use of these images were strictly for educational purposes only
 
-### Media
-
-Images were all open source and free to use from Pexels and Unsplash.
-
-
-### Inspiration
-
-This project was inspired by the Hello Django project and the I Think Therefore I Blog project.
-Website template from Figma community.
-Also as inspiration source for this project was used the real website [Johnny's Barber Shop](https://johnnysbarbershop.ie/). 
-Aleksey Konovalov's Readme.md file was used as a template for writing Readme.md.
 
 ### Acknowledgments
 
-Nikolay Cherniy and too_._kind from Telegram's [Django Channel](https://t.me/trueDjangoChannel) for helping right path to  render the form on the page.
-Kasia for supporting all our group and for  individual support in all circumstances.
-The tutor support team at Code Institute for their support.
-To my friends who participated in testing my application.
-
-[Back to the top](#table-of-contents) -->
+I wish to acknowledge my mentor Martina Terlevic , Code Institute's 'Tutor me' and the CI slack community for all the support thus far.
