@@ -73,7 +73,7 @@ The main page is as viewed below.
 <details>
 <summary>Africana website look at first glance</summary>
 
-![Home page](staticfiles/images/readme-images/home-page2.PNG)
+![Home page](staticfiles/images/readme-images/home-page2.png)
 
 </details>
 <br />
@@ -97,37 +97,36 @@ The main page is as viewed below.
 
 ### Wireframes
 
-The wireframes were slightly modified during the actual creation of the project, e.g. with pages installed removed form for user convenience and better UX.
-The wireframes can be seen below:
+The wireframes used are shown below although modified in the project work:
 
 **For Mobile view and small screens**
 
 <details>
 <summary>Home page</summary>
 
-![Home page]()
-
-</details>
-
-<details>
-<summary>Sign up page</summary>
-
-![Sign up page]()
+![Home page](staticfiles/images/wireframes/home.png)
 
 </details>
 
 <details>
 <summary>Menu page</summary>
 
-![Menu page]()
+![Menu page](staticfiles/images/wireframes/menu.png)
+
+</details>
+
+<details>
+<summary>My bookings page</summary>
+
+![My bookings page](staticfiles/images/wireframes/mybooking.png)
 
 </details>
 
 
 <details>
-<summary>Bookings page</summary>
+<summary>Book now page</summary>
 
-![NMy bookings page]()
+![Book now page](staticfiles/images/wireframes/book-now.png)
 
 </details>
 
@@ -137,28 +136,28 @@ The wireframes can be seen below:
 <details>
 <summary>Home page</summary>
 
-![Home page]()
-
-</details>
-
-<details>
-<summary>Sign up page</summary>
-
-![Sign up page]()
+![Home page](staticfiles/images/wireframes/homepage.png)
 
 </details>
 
 <details>
 <summary>Menu page</summary>
 
-![Menu page]()
+![Menu page](staticfiles/images/wireframes/ourmenu.png)
 
 </details>
 
 <details>
 <summary>My bookings page</summary>
 
-![Bookings page]()
+![My bookings page](staticfiles/images/wireframes/my-booking.png)
+
+</details>
+
+<details>
+<summary>Book now page</summary>
+
+![Book now page](staticfiles/images/wireframes/booknow.png)
 
 </details>
 <br />
@@ -172,33 +171,33 @@ Due to the base extension, the navigation bar is present on all pages of the sit
 
 Navigation bar for user's without an account.
 
-![Navigation bar for unauthorised user's](staticfiles/images/readme-images/nav-bar2.PNG)
+![Navigation bar for unauthorised user's](staticfiles/images/readme-images/nav-bar2.png)
 
 Navigation bar for logged in users.
-![Authenticated user's Navigation](staticfiles/images/readme-images/nav-bar1.PNG)
+![Authenticated user's Navigation](staticfiles/images/readme-images/nav-bar1.png)
 
 ### Home page
 
 On the Home page, unauthorised users cannot see my bookings and book now links on the nav bar . 
-![Home page](staticfiles/images/readme-images/home-page.PNG)
+![Home page](staticfiles/images/readme-images/home-page.png)
 
 ### Sign up page
 
 This page allows unauthorised users to create an account by following the instructions.
-![Sign up page](staticfiles/images/readme-images/sign-up.PNG)
+![Sign up page](staticfiles/images/readme-images/sign-up.png)
 
 
 ### Login page
 
 This page allows user's with account to login by providing their credentials.
 
-![Sign in page](staticfiles/images/readme-images/sign-in.PNG)
+![Sign in page](staticfiles/images/readme-images/sign-in.png)
 
 
 ## Menu page
 
 The menu button on the bav bar when clicked, takes the user to the menu page which provides users with available menu and the corresponding price to choose from.
-![Menu page](staticfiles/images/readme-images/menu-page.PNG)
+![Menu page](staticfiles/images/readme-images/menu-page.png)
 
 
 ## Book now page
@@ -207,18 +206,18 @@ The Book now button when clicked, takes the user to the book now page. For logge
 
 #### Book Now page for a logged in user
 
-![Book Now page](staticfiles/images/readme-images/book-now-page.PNG)
+![Book Now page](staticfiles/images/readme-images/book-now-page.png)
 
 #### Book Now page for an unauthorised user
 
-![Book now page](staticfiles/images/readme-images/book-now-page2.PNG)
+![Book now page](staticfiles/images/readme-images/book-now-page2.png)
 
 
 ## My Bookings page
 
 The booking page displays bookings made by the logged in user, with details about the bookings.
 
-![Booking page](staticfiles/images/readme-images/my-bookings-page.PNG)
+![Booking page](staticfiles/images/readme-images/my-bookings-page.png)
 
 If there is no booking yet, the logged in user is told with a further suggestion to make bookings with a provided a link to the page to make bookings. If the user is not logged in, they are redirected to sign up page.
 
@@ -226,20 +225,20 @@ If there is no booking yet, the logged in user is told with a further suggestion
 
 Every bookings made by a logged in user can be modified by either editing the bookings or deleting them. The modify and delete button exist on my bookings page.
 
-![Edit booking page](staticfiles/images/readme-images/edit-booking.PNG)
+![Edit booking page](staticfiles/images/readme-images/edit-booking.png)
 
 ## Delete button
 
 Only a logged in user has access to this feature. Once this button is clicked the JavaScript code renders a modal to further get assurance that the user wants to delete that booking before deletion is done.
 
-![Delete booking page](staticfiles/images/readme-images/delete-booking.PNG)
+![Delete booking page](staticfiles/images/readme-images/delete-booking.png)
 
 
 ## Logout page
 
 A logged in user can log out by clicking the log out button on the nav bar. This action takes the user to the sign out page to get confirmation before the user is logged out.
 
-![Logout page](staticfiles/images/readme-images/log-out.PNG)
+![Logout page](staticfiles/images/readme-images/log-out.png)
 
 
 ### Responsive design
@@ -255,6 +254,7 @@ This project has been tested using the Google Chrome Developer multi-device emul
 - Contact page
 - Comment page for customers comment about the services provided by africana.
 - After been served by africana, the modify and delete buttons on the users bookings should not be visible any longer.
+- The modify and delete button becomes inactive once services have been provided by africana.
 
 
 ## Technologies Used
@@ -283,8 +283,7 @@ This project has been tested using the Google Chrome Developer multi-device emul
 - [Bootstrap](https://getbootstrap.com/): Was used to create the front-end design.
 - [Gitpod](https://Gitpod.io/): was used as IDE to commit and push the project to GitHub.
 - [GitHub](https://github.com/): Was used as the version control system to manage the code
-<!-- - [Figma:](https://www.figma.com/) Was used to create wireframes -->
-<!-- - [TinyPNG:](https://www.figma.com/) Was used to reduce the size and weight of images and optimizing interaction with the site  -->
+- [Canva:](https://www.canva.com/) Was used to create wireframes
 - [Am I Responsive](http://ami.responsivedesign.is/): was used to generate an image showing the website's responsiveness on different screen sizes 
 - [Pip3](https://pypi.org/project/pip/): is the package manager to install Python modules and libraries.
 - [Gunicorn](https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/gunicorn/): "Green Unicorn" is a Python Web Server Gateway to translate HTTP Requests for Python to understand.
@@ -294,6 +293,8 @@ This project has been tested using the Google Chrome Developer multi-device emul
 - [W3C Validator](https://validator.w3.org/): was used to validate HTML5 codes for this website.
 - [W3C CSS validator](https://jigsaw.w3.org/css-validator/): was used to validate CSS codes for this website.
 - [Github Projects and Kanban board](https://github.com/users/LarisaLG/projects/17/views/1): was used to track the progress of the project.
+- [CI python linter](https://pep8ci.herokuapp.com/): was used to validate python codes.
+- [JS Hint](https://jshint.com/): was used to validate JavaScript codes.
 
 
 ## Testing
@@ -309,11 +310,7 @@ This project has been tested using the Google Chrome Developer multi-device emul
 #### Unresolved Bugs
 
 The code does not look broken, I don't know why there is validator error. Other than this no known bug was found.
- -![signup page W3C  code testing](staticfiles/images/readme-images/unfixed-bug.PNG)
-
-
-[Back to the top](#table-of-contents)
-
+ -![signup page W3C  code testing](staticfiles/images/readme-images/unfixed-bug.png)
 
 
 ### Manual Testing
@@ -428,13 +425,13 @@ The website JavaScript code was validated using [JSHint Validation](https://jshi
 All Python code was checked manually with the aid of  [CI Python Linter](https://pep8ci.herokuapp.com/). Errors observed have all been fixed. 
 
 urls.py
-![urls.py](staticfiles/images/readme-images/checker-urls.PNG)
+![urls.py](staticfiles/images/readme-images/checker-urls.png)
 models.py
-![models.py](staticfiles/images/readme-images/checker-models.PNG)
+![models.py](staticfiles/images/readme-images/checker-models.png)
 forms.py
-![forms.py](staticfiles/images/readme-images/checker-forms.PNG)
+![forms.py](staticfiles/images/readme-images/checker-forms.png)
 views.py
-![views.py](staticfiles/images/readme-images/checker-views.PNG)
+![views.py](staticfiles/images/readme-images/checker-views.png)
 
 ---
 
@@ -494,10 +491,13 @@ The idea for structure and the code of this project was from Code Institute's Co
   * The idea for my models.py was from Codestar blog and barbarshop by LarisaLG.
   * Credit to [W3schools](https://www.w3schools.com/django/django_404.php) for the idea to handle double booking server error.
   * Credit to [Django documentation](https://docs.djangoproject.com/en/5.0/) for "Everything you need to know about Django".
-  * credit to LarisaLG for the readme structure.
+
 
 
 ### Content and Media
+
+  * credit to LarisaLG for the readme structure.
+  * Credit to LarisaLG on how to fork a GitHub repository or make a local clone.
 
 Credit to the following for the images of my homepage:
 1. [Abacha](https://apocomkitchen.co.uk/assets/front/img/product/sliders/615b138763c10.jpg)
