@@ -96,7 +96,7 @@ The main page is as viewed below.
 
 
 ### Wireframes
-<!-- 
+
 The wireframes were slightly modified during the actual creation of the project, e.g. with pages installed removed form for user convenience and better UX.
 The wireframes can be seen below:
 
@@ -105,21 +105,21 @@ The wireframes can be seen below:
 <details>
 <summary>Home page</summary>
 
-![Home page](static/assets/wireframes/home-mobile.png)
+![Home page]()
 
 </details>
 
 <details>
 <summary>Sign up page</summary>
 
-![Sign up page](static/assets/wireframes/register-mobile.png)
+![Sign up page]()
 
 </details>
 
 <details>
-<summary>Services page</summary>
+<summary>Menu page</summary>
 
-![Services page](static/assets/wireframes/services-mobile.png)
+![Menu page]()
 
 </details>
 
@@ -127,7 +127,7 @@ The wireframes can be seen below:
 <details>
 <summary>Bookings page</summary>
 
-![Bookings page](static/assets/wireframes/bookings-mobile.png)
+![NMy bookings page]()
 
 </details>
 
@@ -137,35 +137,31 @@ The wireframes can be seen below:
 <details>
 <summary>Home page</summary>
 
-![Home page](static/assets/wireframes/home-desktop.png)
+![Home page]()
 
 </details>
 
 <details>
 <summary>Sign up page</summary>
 
-![Sign up page](static/assets/wireframes/register-desktop.png)
+![Sign up page]()
 
 </details>
 
 <details>
-<summary>Services page</summary>
+<summary>Menu page</summary>
 
-![Services page](static/assets/wireframes/services-desktop.png)
+![Menu page]()
 
 </details>
 
 <details>
-<summary>Bookings page</summary>
+<summary>My bookings page</summary>
 
-![Bookings page](static/assets/wireframes/bookings-desktop.png)
+![Bookings page]()
 
 </details>
 <br />
-
-[Back to the top](#table-of-contents)
-
--->
 
 
 ## Features
@@ -301,24 +297,19 @@ This project has been tested using the Google Chrome Developer multi-device emul
 
 
 ## Testing
-<!--
+
 ### Bugs
 
 #### Fixed Bugs
-
-|  Bug  |Bug image  |  Solution  |Status   |
-|--|--|--|--|
-|  
-Menu on mobile devices is positioned incorrectly |![](static/assets/bugs/menu-position.png)  | fixed CSS style   | fixed |
-|Booking form does not appear on the booking page  | ![](static/assets/bugs/booking-form.png) | fixed by passing form object to the booknow.html template , placing form tags in in the proper template booknow.html | fixed |
-| In the Gitpod Environment the site works with full CSS style,  but on Heroku the site  and the admin page (/admin) comes up without CSS styling  | - | Set DEBUG variable to False and remove the DISABLE_COLLECTSTATIC variable | fixed |
-| Function get_min_date isn't defined  | ![](static/assets/bugs/minvalue-validator.png)| fixed by removing function from views.py file and placing function in the forms.py so the form can access that function | fixed  |
-| When an invalid phone number is entered on the Booknow page, the form clears the fields and returns to its original state with no messages to the user. The Change Booking page also returns the form to its original state with pre-filled fields | - | Added regex validation for numeric input and displaying a message to the user | fixed  |
-| Pricing elements on the Services page are not displayed correctly on mobile devices |![](static/assets/bugs/services-btns-bug.png)  | added media queries rules for small screen devices  | fixed  |
-
+ - The booking form was not rendering. This was fixed after I installed Django crispy forms
+ - The use of modal via JavaScript to delete booking was not working. I used the wrong url to trigger the delete action. I fixed the 
+ by replacing urls pattern = [ path('delete_booking/<int:booking_id>/', views.booking_delete,name='booking_delete'),] with 
+ urls pattern = [ path('bookings/delete_booking/<int:booking_id>/', views.booking_delete,name='booking_delete'),]
 
 #### Unresolved Bugs
-No known bugs remaining
+
+The code does not look broken, I don't know why there is validator error. Other than this no known bug was found.
+ -![signup page W3C  code testing](staticfiles/images/readme-images/unfixed-bug.PNG)
 
 
 [Back to the top](#table-of-contents)
@@ -329,48 +320,45 @@ No known bugs remaining
 
 #### Device Testing
 
-The Project was tested using a multi-device emulator with different display sizes in the Google Chrome Developer Dashboard.
-The following devices have been tested:
+This Project was tested via a multi-device emulator with different display sizes in the Google Chrome Developer Dashboard.
+The devices tested are below:
 
+- Galaxy fold (Mobile)
+- Samsung Glaxy s8 (Mobile)
 - Nest HubMax (Desktop)
-- iPad Pro (Tablet)
+- Nest Hub (Desktop)
 - iPad Air (Tablet)
 - iPad Mini (Tablet)
-- Galaxy Tab S4 (Tablet)
-- Nexus 7 (Mobile)
-- Nokia N9 (Mobile)
-- iPhone 5/SE (Mobile)
-- iPhone 4 (Mobile)
+- iPhone 12 pro (Mobile)
+- iPhone 14 pro max (Mobile)
+
 
 #### Browsers Tested
 
-Testing has been carried out on the  following browsers: 
+The browsers used for testing were as follows: 
   - Google Chrome
   - Firefox
   - Microsoft Edge
 
-The site was constantly tested during the process of creating the site in the Gitpod Environment and the deployed site on Heroku was also tested in terms of user experience.
+Site testing was done on the Gitpod environment and Heroku.
 The available functionality and user experience is reflected in the table below.
 
 | Goals/actions  | As a guest | As a logged user  | Result | Comment |
 |--|:--:|:--:|:--:|--|
-| I can use menu and navigating through pages | &check; | &check; | Pass | Click on menu item redirects to appropriate page |
-| I can see the home page | &check; | &check; | Pass | |
-| I can see the Services page | &check; |&check;  |  Pass| |
-| I can see the Sign Up page | &check; |&check;  |  Pass| |
+| I can see the home page | &check; | &check; | Pass | Unauthorised users can't see My bookings page and Book now page |
 | I can see the Login page  | &check; |&check;  |  Pass| |
-| I can see the Logout page  | &check; |&check;  |  Pass| |
-| I can click the Book Now button  | &check; |&check;  |  Pass| Redirects to the page with a message that the user must register or log in for guest or shows up form for authorized user |
-| I can see the Booknow page | &cross; | &check;  | Pass |A page is displayed with a message that the user must register or log in  |
-| I can fill fields in the form the Booknow page | &cross; | &check;  | Pass |This page and form are available only to authorized users |
-| I can see the Bookings page   | &cross; | &check;  | Pass | This page is available only to an authorized users|
-| I can see the Change booking page  | &cross;  | &check;  | Pass | This page is available only to authorized users|
-| I can edit booking in the form on the Change booking page  | &cross;  | &check;  | Pass |This page is available only to authorized users ||
-| I can see the Delete booking page  |  &cross; | &check;  |Pass  | This page is available only to authorized users |
-| |
+| I can see the Register page | &check; |&check;  |  Pass| |
+| I can see the Logout page  | &cross; |&check;  |  Pass| Available only to an authorized users |
+| I can see the Menu page | &check; |&check;  |  Pass| |
+| I can click on My bookings and make bookings as a logged in user | &cross; | &check; | Pass | Available only to an authorized users|
+| I can modify bookings | &cross; |&check;  |  Pass| Available only to an authorized users | Available only to an authorized users
+| I can delete bookings | &cross; |&check;  |  Pass| Available only to an authorized users | Available only to an authorized users
+| I can click the Book now nav link and see the Book now page | &cross; |&check;  |  Pass| Available only to an authorized users
+| I can fill fields in the Book now form | &cross; | &check;  | Pass |Available only to an authorized users |
+| I can see the Bookings page   | &cross; | &check;  | Pass | Available only to an authorized users|
 
 <br/>
--->
+
 
 ## Validation
 
@@ -506,6 +494,7 @@ The idea for structure and the code of this project was from Code Institute's Co
   * The idea for my models.py was from Codestar blog and barbarshop by LarisaLG.
   * Credit to [W3schools](https://www.w3schools.com/django/django_404.php) for the idea to handle double booking server error.
   * Credit to [Django documentation](https://docs.djangoproject.com/en/5.0/) for "Everything you need to know about Django".
+  * credit to LarisaLG for the readme structure.
 
 
 ### Content and Media
