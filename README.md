@@ -1,5 +1,5 @@
 # Portfolio Project 4 -  Africana Eatery booking system
-![](staticfiles/images/readme-images/am-i-responsive.PNG)
+![](staticfiles/images/readme-images/am-i-responsive.png)
 
 The deployed [Africana](https://django-africana-eatery-ed503b69cf5f.herokuapp.com/) app.
 
@@ -367,56 +367,56 @@ Errors was noticed when carrying out HTML validation for the sign up page. Since
 
 <details><summary>Home page</summary>
 
-![](staticfiles/images/readme-images/checker-home-page.PNG)
+![](staticfiles/images/readme-images/checker-home-page.png)
 </details>
 <details><summary>Menu page</summary>
 
-![](staticfiles/images/readme-images/checker-menu-page.PNG)
+![](staticfiles/images/readme-images/checker-menu-page.png)
 </details>
 <details><summary>Sign up page</summary>
 
-![](staticfiles/images/readme-images/checker-signup-page.PNG)
+![](staticfiles/images/readme-images/checker-signup-page.png)
 </details>
 <details><summary>Login page</summary>
 
-![](staticfiles/images/readme-images/checker-login-page.PNG)
+![](staticfiles/images/readme-images/checker-login-page.png)
 </details>
 
 <details><summary>My bookings page</summary>
 
-![](staticfiles/images/readme-images/checker-mybookings-page.PNG)
+![](staticfiles/images/readme-images/checker-mybookings-page.png)
 </details>
 
 <details><summary>Book Now page</summary>
 
-![](staticfiles/images/readme-images/checker-booknow-page.PNG)
+![](staticfiles/images/readme-images/checker-booknow-page.png)
 </details>
 
 </details>
 <details><summary>Modify booking page</summary>
 
-![](staticfiles/images/readme-images/checker-editbooking-page.PNG)
+![](staticfiles/images/readme-images/checker-editbooking-page.png)
 </details>
 <details><summary>Delete booking page</summary>
 
-![](staticfiles/images/readme-images/checker-deletebooking-page.PNG)
+![](staticfiles/images/readme-images/checker-deletebooking-page.png)
 </details>
 <details><summary>Logout page</summary>
 
-![](staticfiles/images/readme-images/checker-logout-page.PNG)
+![](staticfiles/images/readme-images/checker-logout-page.png)
 </details>
 
 ---
 ### CSS Validation:
 
 The website CSS styling was validated using [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/). 
-![](staticfiles/images/readme-images/checker-styling.PNG)
+![](staticfiles/images/readme-images/checker-styling.png)
 
 ---
 ### JavaScript Validation:
 
 The website JavaScript code was validated using [JSHint Validation](https://jshint.com/). 
-![](staticfiles/images/readme-images/check-js.PNG)
+![](staticfiles/images/readme-images/check-js.png)
 
 ---
 <br/>
