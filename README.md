@@ -99,7 +99,31 @@ The main page is as viewed below.
 
 The wireframes used are shown below although modified in the project work:
 
+**Models**
+
+<details>
+<summary>Menu model</summary>
+
+![Menu model](staticfiles/images/wireframes/menu-model.png)
+
+</details>
+
+<details>
+<summary>Booking model</summary>
+
+![Booking model](staticfiles/images/wireframes/booking-model.png)
+
+</details>
+</br>
+
 **For Mobile view and small screens**
+
+<details>
+<summary>Book now page</summary>
+
+![Book now page](staticfiles/images/wireframes/book-now.png)
+
+</details>
 
 <details>
 <summary>Home page</summary>
@@ -122,13 +146,6 @@ The wireframes used are shown below although modified in the project work:
 
 </details>
 
-
-<details>
-<summary>Book now page</summary>
-
-![Book now page](staticfiles/images/wireframes/book-now.png)
-
-</details>
 
 <br />
 
@@ -194,13 +211,13 @@ This page allows user's with account to login by providing their credentials.
 ![Sign in page](staticfiles/images/readme-images/sign-in.png)
 
 
-## Menu page
+### Menu page
 
 The menu button on the bav bar when clicked, takes the user to the menu page which provides users with available menu and the corresponding price to choose from.
 ![Menu page](staticfiles/images/readme-images/menu-page.png)
 
 
-## Book now page
+### Book now page
 
 The Book now button when clicked, takes the user to the book now page. For logged in user's, a table to fill to make bookings shows up. However, for user's without an account, there is a link provided to redirect them to sign up.
 
@@ -213,7 +230,7 @@ The Book now button when clicked, takes the user to the book now page. For logge
 ![Book now page](staticfiles/images/readme-images/book-now-page2.png)
 
 
-## My Bookings page
+### My Bookings page
 
 The booking page displays bookings made by the logged in user, with details about the bookings.
 
@@ -221,20 +238,26 @@ The booking page displays bookings made by the logged in user, with details abou
 
 If there is no booking yet, the logged in user is told with a further suggestion to make bookings with a provided a link to the page to make bookings. If the user is not logged in, they are redirected to sign up page.
 
-## Edit booking page
+### Edit booking page
 
 Every bookings made by a logged in user can be modified by either editing the bookings or deleting them. The modify and delete button exist on my bookings page.
 
 ![Edit booking page](staticfiles/images/readme-images/edit-booking.png)
 
-## Delete button
+### Double booking prevention
+
+When a user makes a booking that already exits, the server renders the 500.html file in the templates folder, telling the user that the booking exists. 
+![Double booking prevention](staticfiles/images/readme-images/double-booking-page.png)
+
+
+### Delete button
 
 Only a logged in user has access to this feature. Once this button is clicked the JavaScript code renders a modal to further get assurance that the user wants to delete that booking before deletion is done.
 
 ![Delete booking page](staticfiles/images/readme-images/delete-booking.png)
 
 
-## Logout page
+### Logout page
 
 A logged in user can log out by clicking the log out button on the nav bar. This action takes the user to the sign out page to get confirmation before the user is logged out.
 
@@ -302,17 +325,18 @@ This project has been tested using the Google Chrome Developer multi-device emul
 ### Bugs
 
 #### Fixed Bugs
- - The booking form was not rendering. This was fixed after I installed Django crispy forms
- - The use of modal via JavaScript to delete booking was not working. I used the wrong url to trigger the delete action. I fixed the 
+- The booking form was not rendering. This was fixed after I installed Django crispy forms
+- The use of modal via JavaScript to delete booking was not working. I used the wrong url to trigger the delete action. I fixed the 
  by replacing urls pattern = [ path('delete_booking/<int:booking_id>/', views.booking_delete,name='booking_delete'),] with 
  urls pattern = [ path('bookings/delete_booking/<int:booking_id>/', views.booking_delete,name='booking_delete'),]
 
 #### Unresolved Bugs
 
-The code does not look broken, I don't know why there is validator error. Other than this no known bug was found.
- -![signup page W3C  code testing](staticfiles/images/readme-images/unfixed-bug.png)
+- The code does not look broken, I don't know why there is validator error.
+ ![signup page W3C  code testing](staticfiles/images/readme-images/unfixed-bug.png)
 
-
+- There is an uncaught type error in the console of developer tools, however, it does not affect the site in any way.
+ ![Uncaught type error](staticfiles/images/readme-images/uncaught-type-error.png)
 ### Manual Testing
 
 #### Device Testing
@@ -420,17 +444,18 @@ The website JavaScript code was validated using [JSHint Validation](https://jshi
 
 ---
 <br/>
+
 ### Python Validation (PEP8)
 
 All Python code was checked manually with the aid of  [CI Python Linter](https://pep8ci.herokuapp.com/). Errors observed have all been fixed. 
 
-urls.py
+- urls.py
 ![urls.py](staticfiles/images/readme-images/checker-urls.png)
-models.py
+- models.py
 ![models.py](staticfiles/images/readme-images/checker-models.png)
-forms.py
+- forms.py
 ![forms.py](staticfiles/images/readme-images/checker-forms.png)
-views.py
+- views.py
 ![views.py](staticfiles/images/readme-images/checker-views.png)
 
 ---
