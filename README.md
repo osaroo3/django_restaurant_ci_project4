@@ -272,6 +272,7 @@ This project has been tested using the Google Chrome Developer multi-device emul
 
 ## Future features
 
+- Create a new model to hold images of africana foods only. There after using django template tags and filters to populate the food images on the index page.
 - Email confirmation after booking is made.
 - Blog page about african foods and their receipes.
 - Contact page
