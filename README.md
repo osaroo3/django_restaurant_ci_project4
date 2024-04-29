@@ -184,7 +184,7 @@ The wireframes used are shown below although modified in the project work:
 
 ### Navbar
 
-Due to the base extension, the navigation bar is present on all pages of the site. If the user is logged in, the right end of the nav bar changes from "Welcome, AnonymousUser to welcome, John(depending on the name of the user)". The nav bar also collapses into a hamburger icon for smaller screen sizes.
+Due to the base extension, the navigation bar is present on all pages of the site. If the user is logged in, the right end of the navbar changes from "Welcome, AnonymousUser to welcome, John(depending on the name of the user)". The navbar also collapses into a hamburger icon for smaller screen sizes.
 
 Navigation bar for user's without an account.
 
@@ -213,30 +213,24 @@ This page allows user's with account to login by providing their credentials.
 
 ### Menu page
 
-The menu button on the bav bar when clicked, takes the user to the menu page which provides users with available menu and the corresponding price to choose from.
+The menu button on the navbar when clicked, takes the user to the menu page which provides users with available menu and the corresponding price to choose from.
 ![Menu page](staticfiles/images/readme-images/menu-page.png)
 
 
 ### Book now page
 
-The Book now button when clicked, takes the user to the book now page. For logged in user's, a table to fill to make bookings shows up. However, for user's without an account, there is a link provided to redirect them to sign up.
+The Book now nav link when clicked, takes the user to the book now page. For logged in user's, a table to fill to make bookings shows up.
 
 #### Book Now page for a logged in user
 
 ![Book Now page](staticfiles/images/readme-images/book-now-page.png)
 
-#### Book Now page for an unauthorised user
-
-![Book now page](staticfiles/images/readme-images/book-now-page2.png)
-
-
 ### My Bookings page
 
-The booking page displays bookings made by the logged in user, with details about the bookings.
+The my bookings page displays bookings made by the logged in user, with details about the bookings.If there is no booking yet, the logged in user is told with a further suggestion to make bookings with a provided link to the page to make bookings.
 
 ![Booking page](staticfiles/images/readme-images/my-bookings-page.png)
 
-If there is no booking yet, the logged in user is told with a further suggestion to make bookings with a provided a link to the page to make bookings. If the user is not logged in, they are redirected to sign up page.
 
 ### Edit booking page
 
@@ -259,7 +253,7 @@ Only a logged in user has access to this feature. Once this button is clicked th
 
 ### Logout page
 
-A logged in user can log out by clicking the log out button on the nav bar. This action takes the user to the sign out page to get confirmation before the user is logged out.
+A logged in user can log out by clicking the logout button on the navbar. This action takes the user to the sign out page to get confirmation before the user is logged out.
 
 ![Logout page](staticfiles/images/readme-images/log-out.png)
 
@@ -274,10 +268,9 @@ This project has been tested using the Google Chrome Developer multi-device emul
 
 - Create a new model to hold images of africana foods only. There after using django template tags and filters to populate the food images on the index page.
 - Email confirmation after booking is made.
-- Blog page about african foods and their receipes.
+- Blog page about african foods and their recipes.
 - Contact page
 - Comment page for customers comment about the services provided by africana.
-- After been served by africana, the modify and delete buttons on the users bookings should not be visible any longer.
 - The modify and delete button becomes inactive once services have been provided by africana.
 
 
@@ -311,7 +304,7 @@ This project has been tested using the Google Chrome Developer multi-device emul
 - [Am I Responsive](http://ami.responsivedesign.is/): was used to generate an image showing the website's responsiveness on different screen sizes 
 - [Pip3](https://pypi.org/project/pip/): is the package manager to install Python modules and libraries.
 - [Gunicorn](https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/gunicorn/): "Green Unicorn" is a Python Web Server Gateway to translate HTTP Requests for Python to understand.
-- [Spycopg2](https://pypi.org/project/psycopg2/): PostgreSQL database adapter to manage the Database in Python. 
+- [Psycopg2](https://pypi.org/project/psycopg2/): PostgreSQL database adapter to manage the Database in Python. 
 - [Heroku](https://dashboard.heroku.com/): the hosting service used to host my website.
 - [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/open/): was used to debug the website.
 - [W3C Validator](https://validator.w3.org/): was used to validate HTML5 codes for this website.
@@ -327,9 +320,9 @@ This project has been tested using the Google Chrome Developer multi-device emul
 
 #### Fixed Bugs
 - The booking form was not rendering. This was fixed after I installed Django crispy forms
-- The use of modal via JavaScript to delete booking was not working. I used the wrong url to trigger the delete action. I fixed the 
- by replacing urls pattern = [ path('delete_booking/<int:booking_id>/', views.booking_delete,name='booking_delete'),] with 
- urls pattern = [ path('bookings/delete_booking/<int:booking_id>/', views.booking_delete,name='booking_delete'),]
+- The use of modal via JavaScript to delete booking was not working. I used the wrong url to trigger the delete action. I fixed 
+  this by replacing urls pattern = [ path('delete_booking/<int:booking_id>/', views.booking_delete,name='booking_delete'),] with 
+  urls pattern = [ path('bookings/delete_booking/<int:booking_id>/', views.booking_delete,name='booking_delete'),]
 
 #### Unresolved Bugs
 
@@ -373,11 +366,11 @@ The available functionality and user experience is reflected in the table below.
 | I can see the Logout page  | &cross; |&check;  |  Pass| Available only to an authorized users |
 | I can see the Menu page | &check; |&check;  |  Pass| |
 | I can click on My bookings and make bookings as a logged in user | &cross; | &check; | Pass | Available only to an authorized users|
-| I can modify bookings | &cross; |&check;  |  Pass| Available only to an authorized users | Available only to an authorized users
-| I can delete bookings | &cross; |&check;  |  Pass| Available only to an authorized users | Available only to an authorized users
-| I can click the Book now nav link and see the Book now page | &cross; |&check;  |  Pass| Available only to an authorized users
-| I can fill fields in the Book now form | &cross; | &check;  | Pass |Available only to an authorized users |
-| I can see the Bookings page   | &cross; | &check;  | Pass | Available only to an authorized users|
+| I can modify bookings | &cross; |&check;  |  Pass| Available only to an authorized users | Available only to authorized users
+| I can delete bookings | &cross; |&check;  |  Pass| Available only to an authorized users | Available only to authorized users
+| I can click the Book now nav link and see the Book now page | &cross; |&check;  |  Pass| Available only to authorized users
+| I can fill fields in the Book now form | &cross; | &check;  | Pass |Available only to authorized users |
+| I can see the MY bookings page   | &cross; | &check;  | Pass | Available only to authorized users|
 
 <br/>
 
